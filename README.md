@@ -45,7 +45,7 @@ The dataset used consists of Classical Piano MIDI files containing compositions 
 * Create the model with two stacked LSTM layers with the latent dimension of 256 and a fully connected layer for the output with softmax activation.
 * Compile the model using Adam optimizer and train the neural network for 120 epochs.
 
-Generating notes from the Trained Model:
+#### Generating notes from the Trained Model:
 * Use the trained model to predic the notes by generating a random index for the input array.
 * Use the ‘np.argmax()’ function to get the data of the maximum probability value, which is converted to a note using the dictionary.
 * Repeat the process to generate 200 notes.
@@ -53,3 +53,5 @@ Generating notes from the Trained Model:
 
 ### Architecture:
 Two stacked LSTM layers have been used with a dropout rate of 0.5. Dropout Layer is a regularization technique to reduce overfitting in deep learning models. A fully connected layer of size equal to the length of unique notes is used with 'softmax' activation(used for multi-class classification problems).
+
+<img src = "" width="800" height="350" />
