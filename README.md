@@ -24,4 +24,32 @@ Image Source: Udacity
 * Matplotlib: For plotting graphs
 
 ### Datset Used:
-The dataset used consists of Classical Piano MIDI files containing compositions of 19 famous composers from [Classical Piano MIDI Page]http://www.piano-midi.de/.
+The dataset used consists of Classical Piano MIDI files containing compositions of 19 famous composers from [Classical Piano MIDI Page](http://www.piano-midi.de/).
+
+### How to code:
+#### Read the MIDI file:
+* Import the required libraries.
+* Call each MIDI file from its directory and parse the file.
+* Obtain the data only for piano instrument, seperating all other instruments.
+* Iterate over all the parts of sub stream elements to check if element's type is Note or Chord. If it is Chord, split them into notes.
+* Collect all the notes in an array.
+
+#### Input and Output Sequences for the Model:
+* Identify the Unique Notes and find the frequency of each such note.
+* Filter notes wuth threshold frequency greater than 50 Hz.
+* Create a dictionary to convert note index to note and vice versa.
+* Create the input and output sequences for the model by using a timestep of 50.
+* Reshape input and output for the model and split the input into 80% for training and 20% for testing sets.
+
+#### Create the Model and Training the Neural Network:
+* Create the model with two stacked LSTM layers with the latent dimension of 256 and a fully connected layer for the output with softmax activation.
+* Compile the model using Adam optimizer and train the neural network for 120 epochs.
+
+Generating notes from the Trained Model:
+* Use the trained model to predic the notes by generating a random index for the input array.
+* Use the ‘np.argmax()’ function to get the data of the maximum probability value, which is converted to a note using the dictionary.
+* Repeat the process to generate 200 notes.
+* Save the final predicted notes as a MIDI file.
+
+### Architecture:
+Two stacked LSTM layers have been used with a dropout rate of 0.5. Dropout Layer is a regularization technique to reduce overfitting in deep learning models. A fully connected layer of size equal to the length of unique notes is used with 'softmax' activation(used for multi-class classification problems).
