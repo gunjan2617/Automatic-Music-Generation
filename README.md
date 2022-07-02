@@ -58,3 +58,8 @@ Two stacked LSTM layers have been used with a dropout rate of 0.5. Dropout Layer
 
 ## Results:
 ### Plot of Accuracy vs Epochs:
+<img src = "https://user-images.githubusercontent.com/88222317/176988833-468cae28-01da-4353-a53a-3e7ea5f4307d.png" width="450" height="300" />
+
+## Plot of Loss vs Epochs:
+<img src = "" width="450" height="300" />
+
