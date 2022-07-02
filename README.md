@@ -11,7 +11,7 @@ LSTMs deal with both Long Term Memory (LTM) and Short Term Memory (STM) and for 
 * **Remember Gate:** LTM information that hasn't been forgotten and the STM and Event are combined together in Remember gate which outputs a new updated LTM.
 * **Use Gate:** This gate also uses information from LTM, STM, and Event to predict the output of a newly updated STM.
 
-<img src = "" width="800" height="350" />
+<img src = "https://user-images.githubusercontent.com/88222317/176985574-f66a9c43-1807-42f4-b8a3-5de71202047b.png" width="800" height="350" />
 
 Image Source: Udacity
 
