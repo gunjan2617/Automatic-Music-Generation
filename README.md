@@ -11,7 +11,7 @@ LSTMs deal with both Long Term Memory (LTM) and Short Term Memory (STM) and for 
 * **Remember Gate:** LTM information that hasn't been forgotten and the STM and Event are combined together in Remember gate which outputs a new updated LTM.
 * **Use Gate:** This gate also uses information from LTM, STM, and Event to predict the output of a newly updated STM.
 
-<img src = "https://user-images.githubusercontent.com/88222317/176985574-f66a9c43-1807-42f4-b8a3-5de71202047b.png" width="800" height="350" />
+<img src = "https://user-images.githubusercontent.com/88222317/176985574-f66a9c43-1807-42f4-b8a3-5de71202047b.png" width="600" height="300" />
 
 Image Source: Udacity
 
@@ -58,8 +58,20 @@ Two stacked LSTM layers have been used with a dropout rate of 0.5. Dropout Layer
 
 ## Results:
 ### Plot of Accuracy vs Epochs:
-<img src = "https://user-images.githubusercontent.com/88222317/176988833-468cae28-01da-4353-a53a-3e7ea5f4307d.png" width="450" height="300" />
+<img src = "https://user-images.githubusercontent.com/88222317/176988833-468cae28-01da-4353-a53a-3e7ea5f4307d.png" width="400" height="250" />
 
 ## Plot of Loss vs Epochs:
-<img src = "" width="450" height="300" />
+<img src = "https://user-images.githubusercontent.com/88222317/176989355-4b1a7267-06f1-4341-a267-b09af802be16.png" width="400" height="250" />
+
+**Dataset**     | **Accuracy**    | **Loss**
+-------------   | -------------   |------------
+Training        |  0.8208         | 0.5325
+Testing         |  0.5330         | 2.3930 
+
+You can listen to the predicted output music by downloading the MIDI files that have been uploaded above.
+
+## References:
+[Udacity: Architecture of LSTM Network](https://auth.udacity.com/sign-in?next=https%3A%2F%2Fclassroom.udacity.com%2Fauthenticated)
+
+[Data Flair Automatic Music Generation using Deep Learning](https://data-flair.training/blogs/automatic-music-generation-lstm-deep-learning/)
 
