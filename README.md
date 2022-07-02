@@ -54,4 +54,7 @@ The dataset used consists of Classical Piano MIDI files containing compositions 
 ### Architecture:
 Two stacked LSTM layers have been used with a dropout rate of 0.5. Dropout Layer is a regularization technique to reduce overfitting in deep learning models. A fully connected layer of size equal to the length of unique notes is used with 'softmax' activation(used for multi-class classification problems).
 
-<img src = "" width="800" height="350" />
+<img src = "https://user-images.githubusercontent.com/88222317/176988415-3867dbdc-5783-4b54-9b05-1d5a0f438c5b.png" width="500" height="350" />
+
+## Results:
+### Plot of Accuracy vs Epochs:
